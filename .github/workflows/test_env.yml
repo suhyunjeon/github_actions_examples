@@ -21,7 +21,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          push: true
           build-args: |
             BUILDKIT_PROGRESS=plain
             DB_HOST=${{ secrets.DB_HOST }}
