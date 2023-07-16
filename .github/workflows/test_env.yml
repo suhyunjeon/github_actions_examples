@@ -22,7 +22,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: user/app:latest
           build-args: |
             BUILDKIT_PROGRESS=plain
             DB_HOST=${{ secrets.DB_HOST }}
